@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Game</title>
+	<script src="game.js"></script>
+	<style type="text/css">
+		#canvas-game {
+			width: 300px;
+			height: 400px;
+			border: 2px solid;
+		}
+	</style>
+</head>
+<body>
+<canvas id="canvas-game" width="300" height="400"></canvas>
+<div>
+	说明：方向键移动，空格键攻击，刷新页面重新开始。
+</div>
+<script type="text/javascript">
+	var e = document.getElementById("canvas-game");
+	var g = new Game();
+	g.init(e);
+	g.start()
+</script>
+</body>
+</html>
